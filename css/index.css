@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Vazirmatn:wght@100..900&display=swap');
+@font-face {
+	font-family: 'Yekan';
+	src:	url('fonts/Yekan.eot'); /* IE9 Compat Modes */
+	src:	url('fonts/Yekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('fonts/Yekan.woff2') format('woff2'), /* Modern Browsers */
+			url('fonts/Yekan.woff') format('woff'), /* Modern Browsers */
+			url('fonts/Yekan.otf') format('opentype'), /* Open Type Font */	
+			url('fonts/Yekan.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+@font-face {
+    font-family: 'IranYekan-Bold';
+    src: url('./fonts/IRANYekanX-Bold.woff2') format('woff2'); 
+
+    font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+@font-face {
+    font-family: 'IRANYekanX-ExtraBlack';
+    src: url('./fonts/IRANYekanX-ExtraBlack.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IRANYekanX-Medium';
+    src: url('./fonts/IRANYekanX-Medium.woff2') format('woff2');
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Vazirmatn ;    
+    text-decoration: none;
+    color: #112D32;
+}
+
+body{
+    background-color: #10292e;
+    position: relative;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding-top: 30px;
+}
+
+.header-wrapper {
+    background-color: #88BDBC;
+    border-radius: 10px;
+    padding: 20px;
+    
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(254, 254, 254, 0.168) 0px 22px 70px 4px;
+}
+
+.header-right a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: Lalezar;
+    font-size: 22px;
+}
+
+.header-right img{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.header-center{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.6rem;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-left button{
+    padding: 11px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #035d5c;
+    color: rgb(232, 232, 232);
+}
+
+.mobile-menu, .mobile-login{ 
+    display: none ;
+}
+
+.mobile-menu i , .mobile-login i{
+    font-size: 20px;
+}
+
+main{
+    margin-top: 100px;
+    direction: rtl;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper{
+    width: 80%;
+}
+
+.new-games-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.main-wrapper .introduction{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+
+.main-wrapper .introduction .text-introduction{
+    width: 40%;
+}
+
+.main-wrapper .introduction .text-introduction h3,span{
+    color: #f1f4f9;
+    font-family: IRANYekanX-ExtraBlack;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.main-wrapper .introduction .text-introduction h3{
+    padding-right: 10px;
+}
+
+.main-wrapper .introduction .text-introduction span{
+    background: linear-gradient(317deg, rgba(79,74,65,1) 26%, rgba(37,78,88,1) 100%); 
+}
+
+.main-wrapper .introduction .text-introduction p{
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.main-wrapper .introduction img{
+    border-radius: 10px;
+    width: 600px;
+    box-shadow: 10px 10px 1000px #fbeec1;
+    border: 1px solid rgb(101, 101, 101);
+}
+
+
+.genres-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.genres-wrapper .genres{
+    display: flex;
+    width: 250px;
+    gap: 1.5rem;
+}
+
+.genres-wrapper .genres .genre img{
+    width: 250px;
+    height: 160px;
+    border-radius: 10px; 
+}
+
+.genres-wrapper .genres .genre{
+    position: relative;
+    width: 250px;
+    height: 160px;
+}
+
+.genres-wrapper .genres .genre a{
+    display: flex;  
+    border-radius: 10px;
+}
+
+.genres-wrapper .genres .genre h4{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    padding: 10px 10px 10px 20px;    
+    height: 160px;
+    font-size: 22px;
+    background-image: linear-gradient(90deg, rgba(26, 28, 36, .8) 40%, rgba(26, 28, 36, 0) 120%);
+    color: #f1f4f9;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    direction: ltr;
+}
+
+
+.new-games{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    width: 35%;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h3{
+    width: fit-content;
+    font-family: IRANYekanX-ExtraBlack;
+    font-size: 30px;
+    font-weight: 900;
+    color: #f1f4f9;
+    border-bottom: #fff 5px solid;
+    
+}
+
+.title button{
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow: 2px 2px 90px 2px rgba(255, 255, 255, 0.342) ;
+    background-color: #112D32;
+    color: #c7c7c7;
+}
+
+.new-games .games img{
+    width: 100px;
+    border-radius: 10px;
+    border: #ffffff65 2px solid;
+}
+
+.new-games .games a{
+    display: flex;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-bottom: #f1f4f9 2px solid;
+}
+
+.new-games .games .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.new-games .games a .description h5{
+    padding: 10px 10px 0 0 ;
+    font-size: 22px;
+    color: #f1f4f9;
+}
+
+.new-games .games a .description h6{
+    padding: 5px 10px 0 0 ;
+    font-size: 15px;
+    color: #f1f4f9;
+}
+
+.new-games .games i{
+    color: white;
+    padding-right: 5px;
+}
+
+
+
+
+.main-game-top img{
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.25) 10px 25px 50px -12px;
+    width: 600px;
+    height: 550px;
+    position: relative;
+}
+
+.main-game-top img:hover,
+.main-game-top img:focus  
+{
+    width: 650px;
+    height: 600px;
+    transition: width 750ms;
+}
+
+.main-game-top p{
+    color: #c7c7c7;
+    position: absolute;
+    width: fit-content;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 180px 20px 40px 20px;
+    font-weight: 900;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 17%, rgba(0,0,0,0.4386087198551295) 50%);
+    border-radius: 10px;
+}
+
+
+.main-game-top a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 20px 20px 15px;
+    color: #c7c7c7;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-game-top i{
+    color: #c7c7c7;
+}
+
+.main-game-top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.main-game-top h3, .colorful-text{
+    font-family: Yekan;
+    font-size: 40px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 400px;    
+}
+
+.footer *
+{
+    color:#f1f4f9;
+}
+
+.footer .footer-wrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    direction: rtl;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08006530248818278) 1%, rgba(3,93,92,1) 100%);
+    padding: 50px;
+    gap: 2rem;
+}
+
+.footer .footer-wrapper .about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 25%;
+}
+
+.footer .footer-wrapper .about-us h3{
+
+    font-family: IRANYekanX-ExtraBlack;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.footer .footer-wrapper .about-us p
+{
+    
+    font-size: 17px;
+}
+
+.footer .footer-wrapper .quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 20px 0 0;
+}
+
+
+
+.footer .footer-wrapper .quick-links li{
+    list-style: none;
+    text-align: start;
+    padding: 5px 0 5px 0;
+    font-size: 18px;
+    
+}
+
+.footer .footer-wrapper .game-sorts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 15px 0 0;
+}
+
+.footer .footer-wrapper .game-sorts li{
+    list-style: none;
+    text-align: start;
+    padding: 7px 0 5px 0;
+    font-size: 17px;
+    
+}
+
+.footer .footer-wrapper .social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 15px 0 0;
+    direction: rtl;
+}
+
+.footer .footer-wrapper .social-links h3{
+    width: auto;
+}
+
+.footer .footer-wrapper .social-links ul{
+
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.footer .footer-wrapper .social-links li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#112d32;
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 3px 3px 100px #fbeec1;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+}
+
+.footer .footer-wrapper .social-links-mobile ul{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.footer .footer-wrapper .social-links-mobile li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10292e;
+    border-radius: 8px;
+    padding: 3px;
+    box-shadow: 3px 3px 100px #fbeec1;
+    width: 45px;
+    height: 45px;
+    list-style: none;
+}
+
+.footer .footer-wrapper .social-links-mobile {
+    display: none;
+}
+
+
+.footer .footer-wrapper h3{
+    background: linear-gradient(317deg, rgba(79,74,65,1) 26%, rgba(37,78,88,1) 100%);
+    font-size: 25px;
+    border-radius: 0 10px 0 10px;
+    color: #f1f4f9;
+    width: fit-content;
+}
+
+
+
+@media screen and (max-width: 950px){
+
+    .header-center, .header-left{
+        display: none;
+    }
+    
+    .header-right img{
+        width: 35px;
+        height: 35px;
+    }
+    .header-right a{
+        font-size: 20px !important;
+    }
+    
+    .header-wrapper{
+        padding: 20px;
+    }
+
+    .mobile-login, .mobile-menu{
+        display: initial;
+    }
+
+    
+    .main-wrapper .introduction{
+        flex-direction: column-reverse;
+        height: 700px;
+    }
+
+    .main-wrapper .introduction .text-introduction{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-wrapper .introduction img{
+        width: 450px;
+    }
+
+    .main-game-top {
+        display: none;
+    }
+
+    .new-games h3{
+        font-family: IranYekan-Bold;
+        font-size: 30px;
+    }
+
+    .new-games .games img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .new-games{
+        width: 100%;
+    }
+    
+    .new-games .games a .description h5{
+        font-size: 25px;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px){
+    
+    .main-wrapper .introduction img{
+        width: 300px;
+    }
+
+    .footer{
+        height: 1300px;
+    }
+
+    .footer .footer-wrapper{
+        height: 1000px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer .footer-wrapper .quick-links,
+    .footer .footer-wrapper .game-sorts{
+        padding: 0;
+    }
+
+    .footer .footer-wrapper .about-us{
+        width: 100%;
+    }
+
+    .footer .footer-wrapper .social-links-mobile{
+        display: initial;
+    }
+
+    .footer .footer-wrapper .social-links{
+        display: none;
+    }
+
+}
+
+
+
