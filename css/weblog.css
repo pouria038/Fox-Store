@@ -13,18 +13,26 @@
     width: fit-content;
 }
 
+.main-wrapper .latest-news .news-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
 .main-wrapper .latest-news .news img{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 400px;
+    width: 380px;
     
 }
+
 
 .main-wrapper .latest-news .news{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     height: 530px;
     background-color: #112d32;
     border-radius: 10px;
@@ -88,4 +96,9 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
+}
+
+@media screen and (max-width: 650px)
+{
+
 }

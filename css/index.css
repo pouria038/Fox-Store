@@ -59,13 +59,15 @@ header{
     align-items: center;
     color: black;
     padding-top: 30px;
+    position: fixed;
+    z-index: 10;
+    
 }
 
 .header-wrapper {
     background-color: #88BDBC;
     border-radius: 10px;
     padding: 20px;
-    
     width: 80%;
     height: 100%;
     display: flex;
@@ -119,11 +121,12 @@ header{
 }
 
 main{
-    margin-top: 100px;
+    padding-top: 100px;
     direction: rtl;
     width: 100vw;
     display: flex;
     justify-content: center;
+    
 }
 
 .main-wrapper{
